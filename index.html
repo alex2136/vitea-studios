@@ -10,11 +10,14 @@
   <div class="scroll-indicator"></div>
   
   <div class="particles"></div>
-  <div class="background-gradient"></div>
 
   <nav>
     <div class="logo">
-      <div class="logo-icon">VS</div>
+      <div class="logo-icon">
+        <svg viewBox="0 0 100 100" class="vs-logo">
+          <text x="50" y="65" text-anchor="middle" class="vs-text">VS</text>
+        </svg>
+      </div>
       Vitea Studios
     </div>
     <button class="mobile-menu" onclick="toggleMenu()">☰</button>
@@ -23,120 +26,76 @@
       <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>  
       <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
       <li><a href="https://discord.gg/PDV" target="_blank" rel="noopener noreferrer">Discord</a></li>
-      <li><a href="https://www.roblox.com/communities/32544455/Vitea-Studios" target="_blank" rel="noopener noreferrer">Group</a></li>
     </ul>
   </nav>
 
   <section id="home">
-    <div class="hero-overlay"></div>
+    <div class="home-banner">
+      <img src="https://i.imgur.com/your-banner-image.png" alt="Vitea Studios Banner" class="banner-image">
+    </div>
     <div class="content">
-      <div class="logo-showcase">
-        <div class="main-logo">VS</div>
-        <div class="logo-glow"></div>
+      <div class="main-logo">
+        <svg viewBox="0 0 200 100" class="main-vs-logo">
+          <text x="100" y="70" text-anchor="middle" class="main-vs-text">VS</text>
+        </svg>
       </div>
       <h1>Vitea Studios</h1>
       <p>Roblox Development & Game Innovation</p>
-      <div class="btn-group">
-        <a href="https://discord.gg/PDV" target="_blank" rel="noopener noreferrer" class="btn primary">
-          <span class="btn-icon">💬</span>
-          Join Discord
-        </a>
-        <a href="https://www.roblox.com/communities/32544455/Vitea-Studios" target="_blank" rel="noopener noreferrer" class="btn secondary">
-          <span class="btn-icon">🎮</span>
-          Join Group
-        </a>
-      </div>
+      <a href="https://discord.gg/PDV" target="_blank" rel="noopener noreferrer" class="btn">Join Our Discord</a>
     </div>
   </section>
 
   <section id="achievements">
-    <div class="section-bg"></div>
     <h2>Our Achievements</h2>
     <div class="cards">
       <div class="card">
-        <div class="card-icon">📊</div>
-        <h3>5M+ Visits</h3>
-        <p>Over five million contributed visits across all our Roblox games, showcasing our dedication to quality gaming experiences.</p>
-        <div class="card-glow"></div>
+        <h3>1M+ Visits</h3>
+        <p>Over one million contributed visits across all our Roblox games, showcasing our dedication to quality gaming experiences.</p>
       </div>
       <div class="card">
-        <div class="card-icon">👥</div>
         <h3>Active Community</h3>
         <p>Growing Discord community with 2,125+ members who share our passion for innovative Roblox game development.</p>
-        <div class="card-glow"></div>
       </div>
       <div class="card">
-        <div class="card-icon">⚡</div>
         <h3>Game Innovation</h3>
         <p>Pioneering new gameplay mechanics and pushing the boundaries of what's possible in Roblox game development.</p>
-        <div class="card-glow"></div>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <div class="section-bg"></div>
     <h2>Featured Projects</h2>
     <div class="projects">
-      <a href="https://www.roblox.com/games/102453099848530/Grow-an-Garden-but-MODDE" target="_blank" rel="noopener noreferrer" class="project">
-        <div class="project-overlay"></div>
-        <div class="project-icon">🌱</div>
-        <div class="project-content">
-          <h3>Grow a Garden Modded</h3>
-          <p>Enhanced farming experience with unlimited planting capabilities, custom tools, and advanced growth mechanics for the ultimate gardening adventure.</p>
-          <div class="play-indicator">PLAY NOW</div>
-        </div>
-        <div class="project-glow"></div>
-      </a>
-      
-      <a href="https://www.roblox.com/games/135023916694973/DONATE-M" target="_blank" rel="noopener noreferrer" class="project">
-        <div class="project-overlay"></div>
-        <div class="project-icon">💰</div>
-        <div class="project-content">
-          <h3>Donate Me Platform</h3>
-          <p>Interactive donation system allowing players to earn virtual currency through engaging gameplay and community participation.</p>
-          <div class="play-indicator">PLAY NOW</div>
-        </div>
-        <div class="project-glow"></div>
-      </a>
-      
-      <a href="https://www.roblox.com/games/101832763962443/PLS-DONATE-V" target="_blank" rel="noopener noreferrer" class="project">
-        <div class="project-overlay"></div>
-        <div class="project-icon">🎁</div>
-        <div class="project-content">
-          <h3>PLS DONATE Enhanced</h3>
-          <p>Advanced donation booth system with custom animations, sound effects, and interactive elements for improved user engagement.</p>
-          <div class="play-indicator">PLAY NOW</div>
-        </div>
-        <div class="project-glow"></div>
-      </a>
+      <div class="project">
+        <h3>Grow a Garden Modded</h3>
+        <p>Enhanced farming experience with unlimited planting capabilities, custom tools, and advanced growth mechanics for the ultimate gardening adventure.</p>
+      </div>
+      <div class="project">
+        <h3>Donate Me Platform</h3>
+        <p>Interactive donation system allowing players to earn virtual currency through engaging gameplay and community participation.</p>
+      </div>
+      <div class="project">
+        <h3>PLS DONATE Enhanced</h3>
+        <p>Advanced donation booth system with custom animations, sound effects, and interactive elements for improved user engagement.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <div class="logo-icon">VS</div>
-        <span>Vitea Studios</span>
-      </div>
-      <p>© 2025 Vitea Studios. All rights reserved.</p>
-    </div>
+    <p>© 2025 Vitea Studios. All rights reserved.</p>
   </footer>
 
   <script>
     function createParticles() {
       const particles = document.querySelector('.particles');
-      const particleCount = window.innerWidth < 768 ? 20 : 40;
-      
-      particles.innerHTML = '';
+      const particleCount = window.innerWidth < 768 ? 15 : 30;
       
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.classList.add('particle');
         particle.style.left = Math.random() * 100 + '%';
-        particle.style.animationDelay = Math.random() * 8 + 's';
-        particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
-        particle.style.setProperty('--random-x', (Math.random() - 0.5) * 200 + 'px');
+        particle.style.animationDelay = Math.random() * 6 + 's';
+        particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
         particles.appendChild(particle);
       }
     }
@@ -158,24 +117,17 @@
       menu.classList.remove('active');
     }
 
-    // Parallax effect for background elements
-    function handleParallax() {
-      const scrolled = window.pageYOffset;
-      const backgrounds = document.querySelectorAll('.section-bg, .hero-overlay');
-      backgrounds.forEach(bg => {
-        bg.style.transform = `translateY(${scrolled * 0.5}px)`;
-      });
-    }
-
     const observerOptions = {
-      threshold: 0.15,
-      rootMargin: '0px 0px -100px 0px'
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
+          entry.target.style.animationDelay = '0.2s';
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
         }
       });
     }, observerOptions);
@@ -183,8 +135,8 @@
     document.addEventListener('DOMContentLoaded', () => {
       createParticles();
       
-      document.querySelectorAll('section, .card, .project').forEach(el => {
-        observer.observe(el);
+      document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
       });
 
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -201,12 +153,11 @@
       });
     });
 
-    window.addEventListener('scroll', () => {
-      updateScrollIndicator();
-      handleParallax();
+    window.addEventListener('scroll', updateScrollIndicator);
+    window.addEventListener('resize', () => {
+      document.querySelector('.particles').innerHTML = '';
+      createParticles();
     });
-    
-    window.addEventListener('resize', createParticles);
 
     document.addEventListener('click', (e) => {
       if (!e.target.closest('nav') && !e.target.classList.contains('mobile-menu')) {
