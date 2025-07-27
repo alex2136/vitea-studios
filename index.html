@@ -13,23 +13,46 @@
 
   <nav>
     <div class="logo">
-      <div class="logo-icon">VS</div>
-      Vitea Studios
+      <div class="logo-container">
+        <div class="vs-logo">VS</div>
+      </div>
+      <span class="logo-text">Vitea Studios</span>
     </div>
     <button class="mobile-menu" onclick="toggleMenu()">☰</button>
     <ul id="nav-menu">
       <li><a href="#home" onclick="closeMenu()">Home</a></li>
       <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>  
       <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#events" onclick="closeMenu()">Events</a></li>
       <li><a href="https://discord.gg/PDV" target="_blank" rel="noopener noreferrer">Discord</a></li>
     </ul>
   </nav>
 
   <section id="home">
     <div class="content">
+      <div class="main-logo">
+        <div class="hero-logo-container">
+          <div class="hero-vs-logo">VS</div>
+        </div>
+      </div>
       <h1>Vitea Studios</h1>
       <p>Roblox Development & Game Innovation</p>
-      <a href="https://discord.gg/PDV" target="_blank" rel="noopener noreferrer" class="btn">Join Our Discord</a>
+      <div class="button-container">
+        <a href="https://discord.gg/PDV" target="_blank" rel="noopener noreferrer" class="btn discord-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+          </svg>
+          Join Discord
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn roblox-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path d="M4.5 5.5l15 13-1 1.5L3.5 7l1-1.5z"/>
+            <path d="M6 8l8 7 4-1-8-7-4 1z"/>
+            <circle cx="10" cy="12" r="1.5" fill="currentColor"/>
+          </svg>
+          Join Group
+        </a>
+      </div>
     </div>
   </section>
 
@@ -37,16 +60,16 @@
     <h2>Our Achievements</h2>
     <div class="cards">
       <div class="card">
-        <h3>1M+ Visits</h3>
-        <p>Over one million contributed visits across all our Roblox games, showcasing our dedication to quality gaming experiences.</p>
+        <h3>5M+ Visits</h3>
+        <p>Over five million contributed visits across all our Roblox games, showcasing our dedication to quality gaming experiences and community engagement.</p>
       </div>
       <div class="card">
         <h3>Active Community</h3>
-        <p>Growing Discord community with 2,125+ members who share our passion for innovative Roblox game development.</p>
+        <p>Growing Discord community with 2,125+ members who share our passion for innovative Roblox game development and creative collaboration.</p>
       </div>
       <div class="card">
         <h3>Game Innovation</h3>
-        <p>Pioneering new gameplay mechanics and pushing the boundaries of what's possible in Roblox game development.</p>
+        <p>Pioneering new gameplay mechanics and pushing the boundaries of what's possible in Roblox game development with cutting-edge features.</p>
       </div>
     </div>
   </section>
@@ -55,16 +78,107 @@
     <h2>Featured Projects</h2>
     <div class="projects">
       <div class="project">
-        <h3>Grow a Garden Modded</h3>
-        <p>Enhanced farming experience with unlimited planting capabilities, custom tools, and advanced growth mechanics for the ultimate gardening adventure.</p>
+        <div class="project-header">
+          <div class="project-title">
+            <div class="project-icon">🌱</div>
+            <h3>Grow a Garden Modded</h3>
+          </div>
+          <div class="project-status">
+            <div class="status-dot"></div>
+            LIVE
+          </div>
+        </div>
+        <p class="project-description">Enhanced farming experience with unlimited planting capabilities, custom tools, and advanced growth mechanics for the ultimate gardening adventure.</p>
+        <div class="project-actions">
+          <a href="https://www.roblox.com/games/134138080308982/Grow-a-Garden-MODDED" target="_blank" class="play-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Play Now
+          </a>
+          <a href="https://www.roblox.com/games/134138080308982/Grow-a-Garden-MODDED" target="_blank" class="info-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+            Game Info
+          </a>
+        </div>
       </div>
+
       <div class="project">
-        <h3>Donate Me Platform</h3>
-        <p>Interactive donation system allowing players to earn virtual currency through engaging gameplay and community participation.</p>
+        <div class="project-header">
+          <div class="project-title">
+            <div class="project-icon">💰</div>
+            <h3>Donate Me</h3>
+          </div>
+          <div class="project-status">
+            <div class="status-dot"></div>
+            LIVE
+          </div>
+        </div>
+        <p class="project-description">Interactive donation system allowing players to earn virtual currency through engaging gameplay and community participation with advanced features.</p>
+        <div class="project-actions">
+          <a href="https://www.roblox.com/games/135023916694973/DONATE-ME" target="_blank" class="play-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Play Now
+          </a>
+          <a href="https://www.roblox.com/games/135023916694973/DONATE-ME" target="_blank" class="info-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+            Game Info
+          </a>
+        </div>
       </div>
+
       <div class="project">
-        <h3>PLS DONATE Enhanced</h3>
-        <p>Advanced donation booth system with custom animations, sound effects, and interactive elements for improved user engagement.</p>
+        <div class="project-header">
+          <div class="project-title">
+            <div class="project-icon">🎁</div>
+            <h3>PLS DONATE V</h3>
+          </div>
+          <div class="project-status">
+            <div class="status-dot"></div>
+            LIVE
+          </div>
+        </div>
+        <p class="project-description">Advanced donation booth system with custom animations, sound effects, and interactive elements for improved user engagement and monetization.</p>
+        <div class="project-actions">
+          <a href="https://www.roblox.com/games/75737282955303/PLS-DONATE-V" target="_blank" class="play-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Play Now
+          </a>
+          <a href="https://www.roblox.com/games/75737282955303/PLS-DONATE-V" target="_blank" class="info-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+            Game Info
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div class="events-container">
+      <div class="no-events">
+        <div class="events-icon">📅</div>
+        <h3>No Events Available</h3>
+        <p>Sorry, there are no events scheduled at the moment. Stay tuned for exciting upcoming events and competitions!</p>
+        <a href="https://discord.gg/PDV" target="_blank" class="discord-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+          </svg>
+          Join Discord for Updates
+        </a>
       </div>
     </div>
   </section>
@@ -76,14 +190,16 @@
   <script>
     function createParticles() {
       const particles = document.querySelector('.particles');
-      const particleCount = window.innerWidth < 768 ? 15 : 30;
+      const particleCount = window.innerWidth < 768 ? 20 : 40;
+      
+      particles.innerHTML = '';
       
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.classList.add('particle');
         particle.style.left = Math.random() * 100 + '%';
-        particle.style.animationDelay = Math.random() * 6 + 's';
-        particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+        particle.style.animationDelay = Math.random() * 12 + 's';
+        particle.style.animationDuration = (Math.random() * 6 + 8) + 's';
         particles.appendChild(particle);
       }
     }
@@ -113,7 +229,7 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.animationDelay = '0.2s';
+          entry.target.style.animationDelay = '0.1s';
           entry.target.style.opacity = '1';
           entry.target.style.transform = 'translateY(0)';
         }
@@ -143,7 +259,6 @@
 
     window.addEventListener('scroll', updateScrollIndicator);
     window.addEventListener('resize', () => {
-      document.querySelector('.particles').innerHTML = '';
       createParticles();
     });
 
